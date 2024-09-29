@@ -1,0 +1,42 @@
+@media screen and (max-width: 1030px) {
+  .projects_container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/* @media screen and (max-width: 1000px) {
+  .experience_education_container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+} */
+
+@media screen and (max-width: 800px) {
+  .hero_section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about_section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .skill,
+  .contact_container,
+  .experience_education_container {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .important_link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
