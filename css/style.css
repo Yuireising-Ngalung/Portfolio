@@ -324,7 +324,6 @@ section {
   justify-content: center;
   align-items: center;
   border: 0.1rem solid rgb(53, 53, 53);
-  width: fit-content;
   border-radius: 2rem;
   padding: 2rem;
   gap: 1rem;

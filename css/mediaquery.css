@@ -33,10 +33,28 @@
     justify-content: center;
   }
 
+  .contact_container {
+    width: 300px;
+
+    a {
+      font-size: 1rem;
+    }
+  }
+
   .important_link {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .hero_section_left img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .about_section_left img {
+    width: 300px;
+    height: 300px;
   }
 }
