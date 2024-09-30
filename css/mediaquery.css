@@ -65,7 +65,11 @@
   .hero_section_right {
     margin-top: 2.5rem;
   }
-  p {
+  .about_section_right p {
+    padding-inline: 1.5rem;
+  }
+
+  .footer p {
     padding-inline: 1.5rem;
   }
 }
