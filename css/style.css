@@ -249,6 +249,8 @@ section {
   padding: 0.5rem;
   border: 0.1rem solid rgb(53, 53, 53);
   border-radius: 2rem;
+  width: 300px;
+  height: 130px;
 }
 
 .about_experience_education {

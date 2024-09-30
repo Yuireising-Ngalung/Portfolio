@@ -61,4 +61,11 @@
   .experience_skill {
     width: 300px;
   }
+
+  .hero_section_right {
+    margin-top: 2.5rem;
+  }
+  p {
+    padding-inline: 1.5rem;
+  }
 }
