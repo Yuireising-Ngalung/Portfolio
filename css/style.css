@@ -227,7 +227,6 @@ section {
   width: 350px;
   height: 390px;
   border-radius: 5rem;
-  filter: grayscale(100%);
 }
 
 .about_section_right {
