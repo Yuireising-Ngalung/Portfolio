@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+:root {
+  --white: white;
+  --black: black;
+  --grey: grey;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  font-size: 1.2rem;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+.container {
+  max-width: 1024px;
+  margin: auto;
+}
+
+section {
+  padding: 100px 0;
+}
+
+.button_transparent {
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 1.5rem;
+  background-color: var(--white);
+  border: 0.1rem solid rgb(53, 53, 53);
+  font-weight: 600;
+}
+
+.button_transparent:hover {
+  background-color: var(--grey);
+  color: var(--white);
+}
+
+.button_color {
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 1.5rem;
+  background-color: var(--grey);
+  border: 0.1rem solid rgb(53, 53, 53);
+  color: var(--white);
+  font-weight: 600;
+}
+
+.button_color:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+/* ===========desktop nav==================== */
+#desktop-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+.nav-links li {
+  height: 17vh;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: var(--black);
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  color: var(--grey);
+}
+
+/* =============Mobile nav============== */
+.mobile-view {
+  display: none;
+}
+#mobile-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 17vh;
+}
+
+.menu-links {
+  padding: 2rem;
+  position: fixed;
+  z-index: 999;
+  height: 100vh;
+  width: 250px;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  background-color: var(--white);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.menu-links ul {
+  list-style: none;
+}
+
+.menu-links ul li {
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.menu-links ul li a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+@media only screen and (max-width: 1200px) {
+  .mobile-view {
+    display: block;
+    width: 85%;
+  }
+
+  .desktop-view {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .menu-links {
+    width: 100%;
+  }
+}
+
+/* ==============Hero Section=============== */
+.hero_section {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_section_left img {
+  width: 350px;
+  height: 390px;
+  border-radius: 50%;
+}
+
+.section_p {
+  text-align: center;
+  font-weight: 600;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.section_sub_title {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--grey);
+}
+
+.hero_section_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.hero_section_social_media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.icon {
+  height: 2rem;
+  cursor: pointer;
+}
+
+/* =============About Section=============== */
+.about_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 5rem;
+}
+
+.about_section_left img {
+  width: 350px;
+  height: 390px;
+  border-radius: 5rem;
+  filter: grayscale(100%);
+}
+
+.about_section_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.experience_education_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about_experience_education {
+  padding: 0.5rem;
+  border: 0.1rem solid rgb(53, 53, 53);
+  border-radius: 2rem;
+}
+
+.about_experience_education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ========Experience Section============= */
+
+.experience_skill {
+  border: 0.1rem solid rgb(53, 53, 53);
+  padding: 2rem;
+  border-radius: 2rem;
+  margin-top: 3rem;
+}
+.experience_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.experience_skill_container {
+  display: flex;
+  gap: 1rem;
+}
+
+/* ===============Projects section=============== */
+.projects_container {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.projects_card {
+  border: 0.1rem solid rgb(53, 53, 53);
+  border-radius: 2rem;
+  padding: 0.5rem 0.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects_card img {
+  width: 300px;
+  height: 250px;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.projects_card h2 {
+  margin: 1rem 0;
+}
+
+/* =============Contact Section============ */
+.main_contact_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5rem;
+}
+.contact_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.1rem solid rgb(53, 53, 53);
+  width: fit-content;
+  border-radius: 2rem;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.mail_phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mail_phone a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.mail_phone a:hover {
+  color: var(--grey);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+/* =============Important links======= */
+.important_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.important_link a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.important_link a:hover {
+  color: var(--grey);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+
+/* ===============Footer Section============== */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 2rem;
+}

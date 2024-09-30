@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaquery.css" />
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <!-- =======Desktop Nav============ -->
+    <div class="container desktop-view">
+      <nav id="desktop-nav">
+        <div class="logo">Yuireising Ngalung</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- ===========Mobile Nav============ -->
+    <div class="container mobile-view">
+      <nav id="mobile-nav">
+        <div class="logo">Yuireising Ngalung</div>
+        <div onclick="showmenu()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="3rem"
+            viewBox="0 -960 960 960"
+            width="3rem"
+            fill="#5f6368"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
+          </svg>
+        </div>
+        <div class="menu-links sidemenu">
+          <div onclick="hidemenu()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="3rem"
+              viewBox="0 -960 960 960"
+              width="3rem"
+              fill="#5f6368"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </div>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- =============Hero Section============ -->
+    <div class="container hero_section">
+      <div class="hero_section_left">
+        <img src="./assets/profilepic.jpeg" alt="Yuireising Ngalung" />
+      </div>
+      <div class="hero_section_right">
+        <p class="section_p">Hello, I'm</p>
+        <h1 class="title">Yuireising Ngalung</h1>
+        <h2 class="section_sub_title">Frontend Developer</h2>
+        <div class="hero_section_buttons">
+          <button class="button_transparent">Download CV</button>
+          <button class="button_color">Contact Info</button>
+        </div>
+        <div class="hero_section_social_media">
+          <img
+            src="./assets/facebook.png"
+            alt="Yuireising Ngalung"
+            class="icon"
+            onclick="location.href='https://facebook.com'"
+          />
+          <img
+            src="./assets/instagram.png"
+            alt="Yuireising Ngalung"
+            class="icon"
+            onclick="location.href='https://instagram.com'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="Yuireising Ngalung"
+            class="icon"
+            onclick="location.href='https://github.com'"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- =============About Section============ -->
+    <section id="about">
+      <div class="container">
+        <p class="section_p">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="about_section">
+          <div class="about_section_left">
+            <img src="./assets/profilepic.jpeg" alt="Yuireising Ngalung" />
+          </div>
+          <div class="about_section_right">
+            <div class="experience_education_container">
+              <div class="about_experience_education">
+                <img src="./assets/experience.png" alt="" class="icon" />
+                <h3>Experience</h3>
+                <p>1+ Years</p>
+                <p>Frontend Development</p>
+              </div>
+              <div class="about_experience_education">
+                <img src="./assets/education.png" alt="" class="icon" />
+                <h3>Education</h3>
+                <p>Bachelor of Computer Application</p>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              deleniti laudantium iusto voluptates incidunt facilis consequatur
+              error quibusdam asperiores dolor sapiente quasi officiis
+              reiciendis aliquam ex, dignissimos vel iure. Corporis!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================Experience Section============ -->
+    <section id="experience">
+      <div class="container">
+        <p class="section_p">Explore</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience_section">
+          <div class="experience_skill">
+            <h2 class="section_sub_title">Frontend Development</h2>
+            <div class="skill">
+              <div class="experience_skill_container">
+                <img src="./assets/checked.png" alt="" class="icon" />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </div>
+              <div class="experience_skill_container">
+                <img src="./assets/checked.png" alt="" class="icon" />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </div>
+              <div class="experience_skill_container">
+                <img src="./assets/checked.png" alt="" class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============Project Section============== -->
+    <section id="projects">
+      <div class="container">
+        <p class="section_p">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="projects_container">
+          <div class="projects_card">
+            <img src="./assets/projects/project1.jpg" alt="" />
+            <h2 class="section_sub_title">Project One</h2>
+            <button
+              class="button_transparent"
+              onclick="location.href='https://rnmh.org'"
+            >
+              Live Demo
+            </button>
+          </div>
+          <div class="projects_card">
+            <img src="./assets/projects/project1.jpg" alt="" />
+            <h2 class="section_sub_title">Project Two</h2>
+            <button
+              class="button_transparent"
+              onclick="location.href='https://rnmh.org'"
+            >
+              Live Demo
+            </button>
+          </div>
+          <div class="projects_card">
+            <img src="./assets/projects/project1.jpg" alt="" />
+            <h2 class="section_sub_title">Project Three</h2>
+            <button
+              class="button_transparent"
+              onclick="location.href='https://rnmh.org'"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============Contact Section============== -->
+    <section id="contact">
+      <div class="container">
+        <p class="section_p">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="main_contact_container">
+          <div class="contact_container">
+            <div class="mail_phone">
+              <img src="./assets/email.png" alt="" class="icon" />
+              <a href="mailto:yuireisingngalung@gmail.com"
+                >Yuireisingngalung@gmail.com</a
+              >
+            </div>
+            <div class="mail_phone">
+              <img src="./assets/phone.png" alt="" class="icon" />
+              <a href="tel:+91 7430957095">+91-7430957095</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======Important Link Section============ -->
+    <div class="container important_link">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- ==============footer section===============-->
+    <div class="container footer">
+      <p>Copiright 2024 Yuireising Ngalung. All Rights Reserved.</p>
+    </div>
+  </body>
+</html>
