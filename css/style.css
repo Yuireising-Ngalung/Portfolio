@@ -175,6 +175,7 @@ section {
   width: 350px;
   height: 390px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .section_p {
@@ -227,6 +228,7 @@ section {
   width: 350px;
   height: 390px;
   border-radius: 5rem;
+  object-fit: cover;
 }
 
 .about_section_right {
